@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Pedro Santana - Designer & Developer</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <div class="scroll-progress"></div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">JP.</div>
+            <ul class="navbar-menu">
+                <li><a href="#home" class="navbar-link">Home</a></li>
+                <li><a href="#sobre" class="navbar-link">Sobre</a></li>
+                <li><a href="#skills" class="navbar-link">Skills</a></li>
+                <li><a href="#projetos" class="navbar-link">Projetos</a></li>
+                <li><a href="#contato" class="navbar-link">Contato</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <a href="Cv_Joao_Pedro_de_Azevedo_Santana.pdf" class="btn-curriculo" download>Baixar CV</a>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <button class="navbar-toggle">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="hero-bg-grid">
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div>
+                <span class="hero-badge">Disponível para novos projetos</span>
+                <h1 class="hero-title">
+                    <span class="hero-title-prefix">Olá, sou</span>
+                    <span class="hero-title-name" id="hero-name">João Pedro Santana</span>
+                </h1>
+                <p class="hero-subtitle" id="hero-role">Designer & Developer</p>
+                <p class="hero-tagline" id="hero-tagline">Criando experiências digitais memoráveis</p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn-secondary">Entrar em Contato</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-links" id="social-links"></div>
+    </section>
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">
+                        Sobre <span class="gradient-text">Mim</span>
+                    </h2>
+                    <p class="about-text" id="about-text"></p>
+                    <div style="margin-top: 2rem;" id="contact-info"></div>
+                </div>
+                <div class="timeline">
+                    <h3 class="timeline-title">Experiência</h3>
+                    <div id="experience-timeline"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section bg-gradient">
+        <div class="container">
+            <h2 class="section-title">
+                Minhas <span class="gradient-text">Habilidades</span>
+            </h2>
+            <div class="skills-container" id="skills-container"></div>
+        </div>
+    </section>
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                Projetos <span class="gradient-text">Selecionados</span>
+            </h2>
+            <div class="projects-grid" id="projects-grid"></div>
+        </div>
+    </section>
+    <section id="contato" class="section">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(6, 182, 212, 0.2), transparent);"></div>
+        <div class="container" style="position: relative;">
+            <h2 class="section-title">
+                Vamos <span class="gradient-text">Conversar?</span>
+            </h2>
+            <form class="contact-form" id="contact-form">
+                <p class="contact-description">
+                    Estou sempre aberta a discutir novos projetos, ideias criativas ou oportunidades de parceria.
+                </p>
+                <div class="form-grid">
+                    <input type="text" name="name" placeholder="Seu nome" class="form-input" required/>
+                    <input type="email" name="email" placeholder="Seu email" class="form-input" required/>
+                </div>
+                <input type="text" name="subject" placeholder="Assunto" class="form-input" required style="margin-bottom: 1.5rem;"/>
+                <textarea name="message" rows="6" placeholder="Sua mensagem" class="form-textarea" required></textarea>
+                <button type="submit" class="form-submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text" id="footer-text">
+                    © 2025 João Pedro Santana. Todos os direitos reservados.
+                </div>
+                <div class="footer-links" id="footer-links"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
